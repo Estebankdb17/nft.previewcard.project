@@ -1,0 +1,153 @@
+html{
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Background*/
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0d1a2d;
+}
+
+/*Card*/
+.maincard{
+    margin: 3rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-wrap: wrap;
+    padding: 1.5625rem;
+    height: 39.25rem;
+    width: 23.125rem;
+    border-radius: 0.7rem;
+    background-color: #15273f;
+    box-shadow: 0rem 0rem 4rem #0b1522;
+}
+/*Equiibrium image*/
+.image{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 0.7rem;
+    margin: 0rem auto;
+}
+.image img{
+    width: 20rem;
+    border-radius: 0.7rem;
+    margin: 0rem auto;
+}
+.overlay{
+    position: absolute;
+    opacity: 0;
+    top: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 0.7rem;
+    margin: 0rem auto;
+    background-color: hsl(178, 100%, 50%);
+}
+.overlay #eye{
+    width: 3.5rem;
+    opacity: 0;
+}
+/*Title*/
+.maincard h1{
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 1.8rem;
+    margin-bottom: 1.8rem;
+}
+/*Description*/
+.maincard #description{
+    color: #90add8;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+/*Payment info*/
+.payinfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-bottom: 1.4rem;
+}
+.payinfo .price{
+    display: flex;
+    align-items: center;
+    margin-right: 7.7rem;
+    color: hsl(178, 100%, 50%);
+}
+.payinfo .countdown{
+    display: flex;
+    align-items: center;
+    color: #90add8;
+}
+.payinfo .price > img{
+    margin-right: 0.6rem;
+}
+.payinfo .countdown > img{
+    margin-right: 0.6rem;
+}
+/*separator*/
+.maincard hr{
+    border-top: #90add8;
+    width: 100%;
+}
+/*Creator*/
+.maincard .creator{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1.5625rem;
+}
+.maincard .creator > img{
+    width: 1.8rem;
+    border: 1px solid white;
+    border-radius: 10rem;
+    margin-right: 1rem;
+}
+.maincard .creator > p{
+    color: #90add8;
+}
+.maincard .creator > p > a{
+    text-decoration: none;
+    color: white;
+}
+/*Footer*/
+.attribution{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 1rem;
+    color: #90add8;
+}
+/*Active*/
+.overlay:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+.overlay:hover>#eye{
+    opacity: 1;
+}
+.maincard>h1:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+.maincard .creator>p>a:hover{
+    color: hsl(178, 100%, 50%);
+}
+.attribution>a:hover{
+    color: hsl(178, 100%, 50%);
+}
